@@ -1,0 +1,510 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(207, 200, 194);
+}
+
+.full .logo{
+    font-size: larger;
+    text-align: center;
+    color:  rgb(83, 80, 77);
+}
+
+.navbar,nav>a{
+    text-decoration: none;
+    background-color:  rgb(58, 56, 56);
+    color: white;
+    border-collapse: collapse;
+    padding: 10px;
+    word-spacing: 80px;
+    font-size: medium;
+}
+
+.navbar a:hover{
+    color: white;
+    background-color: rgb(109, 102, 102);
+}
+
+a{
+    padding-left: 50px;
+}
+
+.search-container::after {
+    content: "";
+    clear: left;
+    display: table;
+  }
+
+.search-container button {
+    float: right;
+    width: 20%;
+    padding: 11px;
+    background: #8a8080;
+    border: none;
+    cursor: pointer;
+  }
+
+.search-container input[type=text] {
+  
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: #a3a3a3;
+  }
+  
+.navbar .search-container {
+    float: right;
+    margin: 0px;
+    padding: 0;
+  }
+        /* Banner */
+
+.banner{
+    padding: 10px;
+    background-color:  rgb(58, 56, 56);
+    margin-top: 10px;
+    background-clip: padding-box;
+}
+
+        /* Middle-banner*/
+.small-banner{
+    margin-top: 10px;
+}
+
+.responsive {
+  float: left;
+  width: 25%;
+}
+
+.small-banner .gallery1 {
+    background-color:  rgb(58, 56, 56);
+    width: 100%;
+    padding: 10px;
+    
+}
+
+.small-banner .gallery2 {
+    background-color:  rgb(58, 56, 56);
+    width: 96%;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.small-banner .gallery3 {
+    background-color:  rgb(58, 56, 56);
+    width: 96%;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.small-banner .gallery4 {
+    background-color:  rgb(58, 56, 56);
+    width: 96%;
+    padding: 10px;
+    margin-left: 10px;
+    float: right;
+}
+
+.small-banner .gallery1 p{
+    text-indent: 35px;
+    color: aliceblue;
+}
+
+.small-banner .gallery1 a{
+    margin-left: 60%;
+    background-color:  rgb(58, 56, 56);
+    color: wheat;
+}
+
+.small-banner .gallery2 p{
+    text-indent: 35px;
+    color: aliceblue;
+}
+
+.small-banner .gallery2 a{
+    margin-left: 60%;
+    background-color:  rgb(58, 56, 56);
+    color: wheat;
+}
+
+.small-banner .gallery3 p{
+    text-indent: 35px;
+    color: aliceblue;
+}
+
+.small-banner .gallery3 a{
+    margin-left: 60%;
+    background-color:  rgb(58, 56, 56);
+    color: wheat;
+}
+
+.small-banner .gallery4 p{
+    text-indent: 35px;
+    color: aliceblue;
+}
+
+.small-banner .gallery4 a{
+    margin-left: 60%;
+    background-color:  rgb(58, 56, 56);
+    color: wheat;
+}
+
+        /* Bottom-Banner */
+
+.bottom-Banner{
+    margin-top:420px ;
+    background-color:  rgb(58, 56, 56);
+    border: 10px solid  rgb(58, 56, 56);
+    position: relative;
+}
+
+.bottom-Banner .bottom-banner-para{
+    color: white;
+    position: absolute;
+    /* border: 2px solid white; */
+    padding-left: 330px;
+    padding-top: 0;
+    margin-top: -30px;
+}
+
+.bottom-Banner .bottom-banner-para a{
+    margin-left: 85%;
+    color: wheat;
+}
+
+.row-1 img{
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.row-2 img{
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+        
+
+    /* Footer */
+
+.footer .left p{
+display: inline;
+padding: 5px;
+font-weight: bold;
+
+}
+
+.footer .right {
+    /* border: 2px solid black; */
+    margin-top: -36px;
+    margin-left: 900px;
+    padding: 4px;
+    background-color:  rgb(58, 56, 56);
+}
+.footer .right>a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer .left {
+    /* border: 2px solid black; */
+    padding: 15px 20px;
+    margin-top: 10px;
+    background-color: rgb(58, 56, 56);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        /* media query      max-width: 600px*/
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    body{
+        /* background-color: black; */
+    }
+
+    .footer .left {
+        margin:-11% 0 auto auto;
+        width: 102%;
+        display: block;
+    }
+    
+    .navbar .search-container  {
+      float: none;
+    }
+
+    .navbar a, .navbar input[type=text], .navbar .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .navbar input[type=text] {
+      border: 1px solid #ccc;  
+    }
+
+            /* Banner */
+    .banner{
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+        padding: 8px;
+        display: block;
+    }
+    .banner img{
+        max-width: 100%;
+        height: auto;
+        padding: 2px;
+    }
+
+            /* Middle-banner*/
+
+    .small-banner{
+        margin: 10px 0px auto 0px;
+        display: block;
+    }
+    .responsive {
+        width: 100%;
+        float: none;
+        padding-top: 4px ;
+    }
+
+    .small-banner .responsive .gallery1 ,img{
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+        display: block;
+        /* border: 5px solod black; */
+    }
+
+    
+    .small-banner .responsive .gallery2,img{
+        
+        width: auto;
+        height: auto;
+        margin: 6px auto auto 0;
+        display: block;
+        /* margin-left: 0;
+        margin-top: 10px; */
+        padding: 9px;
+    }
+
+    .small-banner .responsive .gallery3,img{
+        width: 100%;
+        height: auto;
+        margin: 10px auto auto 0;
+        display: block;
+        /* margin-left: 0;
+        margin-top: 10px; */
+        padding: 13px;
+    }
+
+    .small-banner .responsive .gallery4,img{
+        width: 100%;
+        height: auto;
+        /* margin-left: 0;
+        margin-right: 13px;
+        margin-top: 10px; */
+        margin: 10px 1px auto 0;
+        display: block;
+        padding: 6px;
+    }
+
+    /* Bottom-Banner */
+
+    .bottom-Banner{
+        margin-top:445px ;
+        border: 6px solid rgb(58, 56, 56);   
+        position: relative;
+        margin-right: 0px;
+        display: block;
+    }
+
+    .bottom-Banner .bottom-banner-para{
+        position: absolute;
+        padding-left: 10px;
+        background-color: rgb(58, 56, 56);
+        margin: auto 8px auto -6px;
+        display: block;
+        padding-right: 9px;
+        width: 102.6%;
+        top: 100%;
+    }
+
+    .bottom-Banner .bottom-banner-para a{
+        margin-left: 60%;
+        color: wheat;
+        background-color: transparent;
+        display: block;
+    }
+
+    .row-1 img{
+        padding-right: 5px;
+        padding-bottom: 5px;
+        width: 100%;
+    }
+
+    .row-2 img{
+        padding-right: 5px;
+        padding-bottom: 5px;
+        width: 100%;
+    }
+
+            /* Footer */
+    .footer{
+        /* border: 2px solid black; */
+        margin-top: 340px;
+        margin-right: 10px;
+        display: block;
+    }
+
+    .footer .left>p{
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 14px;
+        margin-left: -20px;
+       /* border: 2px solid black; */
+
+    }
+
+    .footer .left>p:hover{
+        background-color: rgb(211, 201, 188);
+        color: black;
+        
+    }
+
+    .footer .right>a{
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 14px;
+    }
+
+    .footer .right{
+        margin: 10px auto auto 0;
+        width: 102%;
+        display: block;
+        
+    }
+    
+    .footer .right>a:hover{
+        background-color: rgb(211, 201, 188);
+        color: black;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+                        /* media query      max-width: 600px*/
+
+@media only screen and (min-width: 600px) {
+
+body {
+    /* background-color: palevioletred; */
+}
+
+.navbar, nav>a {
+    word-spacing: 11px;
+    margin: auto auto auto auto;
+    display: inline;
+}
+
+.navbar {
+    margin: auto auto;
+    display: block;
+    float: none;
+}
+
+.search-container input[type=text] {
+    position: absolute;
+    margin: 0 auto 0 -35%;
+    display: block;
+    width: 31%;
+    padding: 0px;
+}
+
+.search-container button {
+    position: absolute;
+    width: auto;
+    margin: auto 0px auto -31px;
+    display: block;
+    padding: 10px;
+}
+
+.small-banner .gallery2 {
+    margin-left: 6px;
+    display: block;
+}
+
+.small-banner .gallery3 {
+    margin-left: 6px;
+    display: block;
+}
+
+
+b {
+    margin: 0 31px 0 -37px;
+    display: block;
+}
+
+.small-banner .gallery3 p {
+    padding: 1%;
+}
+
+.bottom-Banner {
+    margin-top: 104%;
+    display: block;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px){
+
+    body {
+        /* background-color: red; */
+    }
+
+
+
+    
+}
